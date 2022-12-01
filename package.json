@@ -1,0 +1,27 @@
+{
+  "name": "nuxt3-module-federation",
+  "version": "0.0.0",
+  "author": "Mohamed V J",
+  "private": true,
+  "description": "Nuxt 3 with Module federation",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  },
+  "keywords": [
+    "nuxt3",
+    "microfrontend",
+    "module-federation",
+    "webpack5"
+  ],
+  "engines": {
+    "node": ">=v18.12.1"
+  },
+  "packageManager": "pnpm@7.17.1"
+}
