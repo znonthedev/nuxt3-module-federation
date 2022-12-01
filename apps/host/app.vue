@@ -1,5 +1,9 @@
 <template>
   <div>
-    <NuxtWelcome />
+      <ButtonTest/>
   </div>
 </template>
+<script setup>
+
+const ButtonTest = defineAsyncComponent(() => import('remote/ButtonTest.vue'))
+</script>
