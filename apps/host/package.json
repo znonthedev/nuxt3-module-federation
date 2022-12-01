@@ -1,5 +1,5 @@
 {
-  "name": "@nuxt3mf/host",
+  "name": "@nuxtmf/host",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0"
+    "nuxt": "3.0.0",
+    "@nuxtmf/nuxt-module-federation": "workspace:*"
   },
   "dependencies": {
     "@nuxt/webpack-builder": "^3.0.0"
