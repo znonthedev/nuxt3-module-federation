@@ -10,9 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "3.0.0",
+    "@headlessui/vue": "^1.7.4",
+    "@heroicons/vue": "^2.0.13",
+    "@nuxtjs/tailwindcss": "^6.1.3",
     "@nuxtmf/nuxt-module-federation": "workspace:*",
-    "@nuxtmf/ui-components": "workspace:*"
+    "@nuxtmf/tailwind-preset": "workspace:*",
+    "@nuxtmf/ui-components": "workspace:*",
+    "nuxt": "3.0.0"
   },
   "dependencies": {
     "@nuxt/webpack-builder": "^3.0.0"

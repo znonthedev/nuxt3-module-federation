@@ -12,8 +12,15 @@ export default defineNuxtConfig({
                 }
             })
         }],
-        '@nuxtmf/ui-components'
+        '@nuxtmf/ui-components',
+        '@nuxtjs/tailwindcss'
     ],
+    tailwindcss: {
+        cssPath: '@nuxtmf/tailwind-preset/globals.css',
+    },
+    build: {
+        transpile: ['@heroicons/vue'],
+    },
     experimental: {
         asyncEntry: true,
 
