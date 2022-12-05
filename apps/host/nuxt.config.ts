@@ -11,7 +11,8 @@ export default defineNuxtConfig({
                         : 'remote@http://localhost:6100/client/remoteEntry.js'
                 }
             })
-        }]
+        }],
+        '@nuxtmf/ui-components'
     ],
     experimental: {
         asyncEntry: true,
