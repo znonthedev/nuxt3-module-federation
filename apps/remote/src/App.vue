@@ -1,3 +1,6 @@
 <template>
-  <button>I am a remote component</button>
+  <Button label="Test" />
 </template>
+<script setup lang="ts">
+import {Button} from '@nuxtmf/ui-components/components'
+</script>

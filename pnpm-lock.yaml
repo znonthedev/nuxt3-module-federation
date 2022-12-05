@@ -12,15 +12,18 @@ importers:
     specifiers:
       '@nuxt/webpack-builder': ^3.0.0
       '@nuxtmf/nuxt-module-federation': workspace:*
+      '@nuxtmf/ui-components': workspace:*
       nuxt: 3.0.0
     dependencies:
       '@nuxt/webpack-builder': 3.0.0
     devDependencies:
       '@nuxtmf/nuxt-module-federation': link:../../packages/nuxt-module-federation
+      '@nuxtmf/ui-components': link:../../packages/ui-components
       nuxt: 3.0.0
 
   apps/remote:
     specifiers:
+      '@nuxtmf/ui-components': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.4.0
       '@typescript-eslint/parser': ^5.4.0
       '@vue/cli-plugin-babel': ~5.0.0
@@ -37,6 +40,7 @@ importers:
       typescript: ~4.5.5
       vue: ^3.2.13
     dependencies:
+      '@nuxtmf/ui-components': link:../../packages/ui-components
       core-js: 3.26.1
       vue: 3.2.45
     devDependencies:

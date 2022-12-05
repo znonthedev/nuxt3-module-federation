@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "kill-port 6100 && vue-cli-service serve --port 6100",
+    "dev": "kill-port 6100 && cross-env publicPath=auto  vue-cli-service serve --port 6100",
     "build": "pnpm run build:client && pnpm run build:server",
     "build:client": "vue-cli-service build --dest dist/client",
     "build:server": "cross-env SSR=true vue-cli-service build --dest dist/server",
@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "@nuxtmf/ui-components": "workspace:*"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.4.0",

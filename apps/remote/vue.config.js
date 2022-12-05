@@ -35,10 +35,9 @@ const isServerBuild = process.env.SSR
 const basePath = 'http://localhost:6100'
 
 const publicPath = (isServerBuild ? basePath + '/server' : basePath + '/client')
-
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath,
+  publicPath: process.env.publicPath || publicPath,
   configureWebpack: {
     optimization: {
       splitChunks: false,
