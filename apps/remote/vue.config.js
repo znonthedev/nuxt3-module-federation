@@ -1,7 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
-const webpack = require('webpack')
 const {dependencies} = require('./package.json')
-const {UniversalFederationPlugin} = require("@module-federation/node");
 
 /**
  * Federates the application

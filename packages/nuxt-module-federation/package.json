@@ -4,7 +4,6 @@
   "main": "nuxt.ts",
   "private": true,
   "dependencies": {
-    "@module-federation/node": "^0.9.6",
     "@nuxt/kit": "^3.0.0",
     "@telenko/node-mf": "^0.0.7",
     "webpack": "^5.75.0"
