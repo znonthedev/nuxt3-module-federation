@@ -1,7 +1,12 @@
 {
-  "name": "ui-components",
+  "name": "@nuxtmf/ui-components",
   "version": "0.0.0",
   "private": true,
+  "main": "nuxt.mjs",
+  "exports": {
+    ".": "./nuxt.mjs",
+    "./components": "./src/components"
+  },
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
